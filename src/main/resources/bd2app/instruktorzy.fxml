@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="409.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd2app.InstruktorzyController">
+    <children>
+        <Button fx:id="logoutButton" layoutX="532.0" layoutY="8.0" mnemonicParsing="false" onAction="#logout" text="Wyloguj" />
+        <Button fx:id="myAccountButton" layoutX="445.0" layoutY="8.0" mnemonicParsing="false" onAction="#showMyAccount" text="Moje konto" />
+        <Button fx:id="returnButton" layoutX="7.0" layoutY="8.0" mnemonicParsing="false" onAction="#goBack" text="Powrót" />
+      <TableView fx:id="instructorsList" layoutX="-1.0" layoutY="40.0" prefHeight="328.0" prefWidth="605.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="129.0" text="Imię" />
+          <TableColumn fx:id="surname" prefWidth="111.0" text="Nazwisko" />
+            <TableColumn fx:id="phone" prefWidth="94.0" text="Telefon" />
+            <TableColumn fx:id="mail" prefWidth="97.0" text="E-mail" />
+            <TableColumn fx:id="startHour" prefWidth="83.0" text="Start pracy" />
+            <TableColumn fx:id="endHour" prefWidth="91.0" text="Koniec pracy" />
+        </columns>
+      </TableView>
+      <Button fx:id="showCategoriesBtn" layoutX="7.0" layoutY="377.0" mnemonicParsing="false" onAction="#showCategories" text="Pokaż przypisane kategorie" />
+      <Button fx:id="addCategoryBtn" layoutX="177.0" layoutY="376.0" mnemonicParsing="false" onAction="#addCategory" text="Przypisz kategorie" />
+      <Button fx:id="deleteInstructorBtn" layoutX="553.0" layoutY="376.0" mnemonicParsing="false" onAction="#deleteInstructor" text="Usuń" />
+      <Button fx:id="editInstructorBtn" layoutX="496.0" layoutY="376.0" mnemonicParsing="false" onAction="#editInstructor" text="Edytuj" />
+      <Button fx:id="addInstructorBtn" layoutX="438.0" layoutY="376.0" mnemonicParsing="false" onAction="#addInstructor" text="Dodaj" />
+      <Button fx:id="availabiltyButton" layoutX="302.0" layoutY="376.0" mnemonicParsing="false" onAction="#checkAvailabilty" text="Sprawdź dostępność" />
+    </children>
+</AnchorPane>

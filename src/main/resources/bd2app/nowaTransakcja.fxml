@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="133.0" prefWidth="287.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd2app.NowaTransakcjaController">
+    <children>
+        <Button fx:id="addNewService" layoutX="107.0" layoutY="99.0" mnemonicParsing="false" onAction="#newService" text="Zapisz" />
+      <Label fx:id="saldoLabel" layoutX="52.0" layoutY="46.0" text="Stan jego portfela to: 100.00zł" visible="false" />
+      <ComboBox fx:id="kursantSelect" layoutX="69.0" layoutY="30.0" prefWidth="150.0" promptText="Wybierz kursanta" />
+      <TextField fx:id="kwotaField" layoutX="14.0" layoutY="67.0" prefHeight="25.0" prefWidth="260.0" promptText="Podaj kwote" />
+    </children>
+</AnchorPane>

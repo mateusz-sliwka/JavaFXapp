@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd2app.TransakcjeController">
+    <children>
+        <Button fx:id="logoutButton" layoutX="532.0" layoutY="8.0" mnemonicParsing="false" onAction="#logout" text="Wyloguj" />
+        <Button fx:id="myAccountButton" layoutX="445.0" layoutY="8.0" mnemonicParsing="false" onAction="#showMyAccount" text="Moje konto" />
+        <Button fx:id="returnButton" layoutX="7.0" layoutY="8.0" mnemonicParsing="false" onAction="#goBack" text="Powrót" />
+      <Button fx:id="newTransactionButton" layoutX="433.0" layoutY="369.0" mnemonicParsing="false" onAction="#newTransaction" text="Dodaj" />
+      <TableView fx:id="transactionsList" layoutY="40.0" prefHeight="323.0" prefWidth="604.0">
+        <columns>
+          <TableColumn fx:id="date" prefWidth="222.0" text="Data" />
+          <TableColumn fx:id="price" prefWidth="146.0" text="Kwota" />
+            <TableColumn fx:id="user" prefWidth="235.0" text="Uzytkownik" />
+        </columns>
+      </TableView>
+      <Button fx:id="deleteTransactionBtn" layoutX="551.0" layoutY="369.0" mnemonicParsing="false" onAction="#deleteTransaction" text="Usuń" />
+      <Button fx:id="editTransactionButton" layoutX="492.0" layoutY="369.0" mnemonicParsing="false" onAction="#editTransaction" text="Edytuj" />
+      <Button fx:id="fileButton" layoutX="8.0" layoutY="369.0" mnemonicParsing="false" onAction="#saveToFile" text="Generuj zestawienie" />
+    </children>
+</AnchorPane>

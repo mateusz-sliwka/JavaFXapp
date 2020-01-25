@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="281.0" prefWidth="287.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd2app.NowaRezerwacjaController">
+    <children>
+        <ComboBox fx:id="uslugaSelect" disable="true" layoutX="28.0" layoutY="69.0" onAction="#getInstructors" prefHeight="27.0" prefWidth="222.0" promptText="Wybierz usługę" />
+        <ComboBox fx:id="instruktorSelect" disable="true" layoutX="28.0" layoutY="107.0" onAction="#updateHours" prefHeight="27.0" prefWidth="222.0" promptText="Wybierz instruktora" />
+        <Button fx:id="addNewReservationBtn" disable="true" layoutX="144.0" layoutY="251.0" mnemonicParsing="false" onAction="#newReservation" text="Dodaj rezerwacje" />
+      <DatePicker fx:id="calendar" disable="true" layoutX="30.0" layoutY="144.0" onAction="#calendarChanged" promptText="Wybierz dzień" />
+      <ComboBox fx:id="hourSelect" disable="true" layoutX="28.0" layoutY="181.0" onAction="#hourSelected" prefHeight="27.0" prefWidth="222.0" promptText="Wybierz godzine" />
+      <ComboBox fx:id="kursantSelect" layoutX="28.0" layoutY="14.0" onAction="#getServices" prefHeight="27.0" prefWidth="222.0" promptText="Wybierz kursanta" />
+      <Label fx:id="saldoLabel" layoutX="52.0" layoutY="46.0" text="Stan jego portfela to: 100.00zł" visible="false" />
+      <ComboBox fx:id="statusSelect" disable="true" layoutX="28.0" layoutY="215.0" prefHeight="27.0" prefWidth="222.0" promptText="Wybierz status" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd2app.KontoController">
+    <children>
+        <Button fx:id="logoutButton" layoutX="532.0" layoutY="8.0" mnemonicParsing="false" onAction="#logout" text="Wyloguj" />
+        <Button fx:id="returnButton" layoutX="7.0" layoutY="8.0" mnemonicParsing="false" onAction="#goBack" text="Powrót" />
+      <Label layoutX="84.0" layoutY="42.0" prefHeight="34.0" prefWidth="70.0" text="Imię: " />
+      <Label layoutX="84.0" layoutY="96.0" prefHeight="34.0" prefWidth="70.0" text="Nazwisko: " />
+      <Label fx:id="peselLabel" layoutX="84.0" layoutY="354.0" prefHeight="34.0" prefWidth="70.0" text="Pesel:" />
+      <Label fx:id="pkkLabel" layoutX="84.0" layoutY="313.0" prefHeight="34.0" prefWidth="70.0" text="PKK:" />
+      <Label layoutX="84.0" layoutY="265.0" prefHeight="34.0" prefWidth="70.0" text="Telefon:" />
+      <Label layoutX="84.0" layoutY="156.0" prefHeight="34.0" prefWidth="70.0" text="E-mail" />
+      <TextField fx:id="name" layoutX="154.0" layoutY="47.0" prefHeight="25.0" prefWidth="212.0" />
+      <TextField fx:id="surname" layoutX="154.0" layoutY="101.0" prefHeight="25.0" prefWidth="212.0" />
+      <TextField fx:id="pesel" layoutX="154.0" layoutY="358.0" prefHeight="25.0" prefWidth="212.0" />
+      <TextField fx:id="pkk" layoutX="154.0" layoutY="317.0" prefHeight="25.0" prefWidth="212.0" />
+      <TextField fx:id="phone" layoutX="154.0" layoutY="270.0" prefHeight="25.0" prefWidth="212.0" />
+      <TextField fx:id="mail" layoutX="154.0" layoutY="161.0" prefHeight="25.0" prefWidth="212.0" />
+      <Label layoutX="84.0" layoutY="214.0" prefHeight="34.0" prefWidth="70.0" text="Hasło" />
+      <PasswordField fx:id="password" layoutX="154.0" layoutY="218.0" prefHeight="25.0" prefWidth="212.0" />
+      <Button fx:id="applyChangesButton" layoutX="469.0" layoutY="358.0" mnemonicParsing="false" onAction="#applyChanges" text="Zatwierdź zmiany" />
+    </children>
+</AnchorPane>

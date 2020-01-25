@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd2app.AdministratorController">
+   <children>
+      <Button fx:id="logoutButton" layoutX="531.0" layoutY="8.0" mnemonicParsing="false" onAction="#logout" text="Wyloguj" />
+      <Button fx:id="myAccountButton" layoutX="443.0" layoutY="8.0" mnemonicParsing="false" onAction="#showMyAccount" text="Moje konto" />
+      <VBox alignment="CENTER" layoutX="188.0" layoutY="60.0" prefHeight="297.0" prefWidth="225.0" spacing="10.0">
+         <children>
+            <Button fx:id="servicesButton" mnemonicParsing="false" onAction="#showServices" prefHeight="25.0" prefWidth="280.0" text="Usługi">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="reservationsButton" mnemonicParsing="false" onAction="#showReservations" prefHeight="25.0" prefWidth="336.0" text="Rezerwacje">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="instructorsButton" mnemonicParsing="false" onAction="#showInstructors" prefHeight="25.0" prefWidth="339.0" text="Instruktorzy">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="usersButton" mnemonicParsing="false" onAction="#showUsers" prefHeight="25.0" prefWidth="321.0" text="Kursanci">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="transactionsButton" mnemonicParsing="false" onAction="#showTransactions" prefHeight="25.0" prefWidth="339.0" text="Transakcje">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="settingsButton" layoutX="10.0" layoutY="216.0" mnemonicParsing="false" onAction="#showSettings" prefHeight="25.0" prefWidth="339.0" text="Ustawienia" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
